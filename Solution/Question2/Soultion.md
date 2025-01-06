@@ -1,0 +1,1 @@
+![All Test Cases](SolutionScreenShots/image.png)

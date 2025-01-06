@@ -2,6 +2,10 @@ import math
 import numpy as np
 from sklearn.metrics import mean_squared_error
 import time
+from functools import wraps
+import inspect
+
+
 
 class BigOCalculator:
     def __init__(self):
@@ -34,11 +38,11 @@ class BigOCalculator:
 
         for input_data in inputs:
             start_time = time.time()
-            func(input_data)
+            func(*input_data)  # Pass unpacked arguments
             end_time = time.time()
 
             times.append(end_time - start_time)
-            input_sizes.append(self._get_input_size(input_data))
+            input_sizes.append(self._get_input_size(input_data[0]))  # Assuming the first argument determines size
 
         complexity = self.calculate(input_sizes, times)
         self.results[func.__name__] = complexity
@@ -57,12 +61,22 @@ class BigOCalculator:
         return self.results
 
 
+
 def analyze_complexity(inputs):
     def decorator(func):
+        @wraps(func)
         def wrapper(*args, **kwargs):
-            calculator = BigOCalculator()
-            complexity = calculator.analyze_function(func, inputs)
+            num_params = len(inspect.signature(func).parameters)
+            if num_params > 1:
+                calculator = BigOCalculator()
+                complexity = calculator.analyze_function(func, inputs)
+            else:
+                single_input_data = [(input,) for input in inputs]  
+                calculator = BigOCalculator()
+                complexity = calculator.analyze_function(func, single_input_data)
+
             print(f"Function {func.__name__} has a time complexity of {complexity}")
             return func(*args, **kwargs)
         return wrapper
     return decorator
+
