@@ -6,7 +6,7 @@ This file provides a link to access all the questions available in the repositor
 
 ## Streak
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=shahiakhilesh1304&theme=highcontrast&hide_border=true)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats-mocha-sigma.vercel.app?user=shahiakhilesh1304)](https://git.io/streak-stats)
 
  ___
 ### Basic
