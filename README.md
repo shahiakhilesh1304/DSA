@@ -15,6 +15,8 @@ This file provides a link to access all the questions available in the repositor
 ### Basic
 - Question 1 [Arrays DS - Basic/Easy](Questions/Question1/arrays-ds.pdf) < [SOURCE - Hackerrank](https://www.hackerrank.com/challenges/arrays-ds/problem?isFullScreen=false) >
     - Note: No use of any inbuilt array functions (can use length function)
+- Question 2 [Sum Pair closest to target - Basic / Easy](Questions\Question2\Sum Pair closest to target.pdf) < [Source - Geeks For Seeks](https://www.geeksforgeeks.org/)>
+
 
 
 
