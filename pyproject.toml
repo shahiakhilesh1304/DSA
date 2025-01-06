@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+#Make changes here according to your repository
+[project]
+name = "DSA"
+version = "1.0.0"
+description = "Data Structure Practice"
+authors = [
+    { name = "Akhilesh Pratap Shahi", email = "akhileshpra.shahi@gmail.com" }
+]
+maintainers = [
+    { name = "Akhilesh Pratap Shahi", email = "akhileshpra.shahi@gmail.com" }    
+]
+readme = "README.md"
+dependencies = [
+    "numpy>=1.21.0",
+    "scikit-learn>=0.24.0"
+]
+keywords = ["DSA","Data Structure","Practice","big-o", "complexity-analysis", "performance"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+requires-python = ">=3.7"
+
+[tool.setuptools]
+packages=[
+    "Ruler"
+]
+[tool.setuptools.package-dir]
+"Ruler" = "Ruler"
