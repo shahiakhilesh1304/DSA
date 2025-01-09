@@ -1,4 +1,6 @@
 from Ruler import testCases
+from Ruler import util
+
 
 def rotationLeft(d,arr):
     i = 0
@@ -10,6 +12,7 @@ def rotationLeft(d,arr):
 
 if __name__ == "__main__":
     testcases = testCases.get_testcases(__file__)
+    aanalyzer,source = util.start(rotationLeft)
     for input,output in testcases.items():
         file = open(input)
         firstline = file.readline().strip().split()
@@ -20,5 +23,6 @@ if __name__ == "__main__":
         print(result)
         file.close()
         print(testCases.validator(result,output))
+    util.report(analyzer,source,rotationLeft)
 
 

@@ -1,14 +1,7 @@
 import math 
-# from Ruler.Analyzer import BigOCalculator, analyze_complexity
+from Ruler import util
 
 
-# @analyze_complexity(inputs=[([1], 2), ([1, 2], 4), 
-#                             ([1, 2, 3], 6), 
-#                             ([1, 2, 3, 4], 5), 
-#                             ([1, 2, 3, 4, 5], 15), 
-#                             ([1, 2, 3, 4, 5, 6], 12), 
-#                             ([10, 20, 30], 40), 
-#                             ([5, 10, 15, 20], 25)])
 def sum_pair(data,target):
     n = len(data)-1
     arr = sorted(data)
@@ -35,7 +28,9 @@ def sum_pair(data,target):
     return result
     
 if __name__ == "__main__":
+    analyzer,source = util.start(sum_pair)
     target = int(input("Enter the target: "))
     data = list(map(int,input("Enter the space separated array data: ").split()))
     result = sum_pair(data,target)
     print(f"Final OutPut: {result} ")
+    util.report(analyzer,source,sum_pair)

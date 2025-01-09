@@ -1,3 +1,5 @@
+from Ruler import util
+
 def dynamicArray(n,queries):
     result = []
     n = int(n)
@@ -20,6 +22,7 @@ def dynamicArray(n,queries):
     return result
 
 if __name__ == "__main__":
+    analyzer,source = util.start(dynamicArray)
     first_multiple_input = []
     data  = open("Questions/Question4/input/input10.txt",'r')
     first_multiple_input = list(map(int,data.readline().split()))
@@ -42,4 +45,7 @@ if __name__ == "__main__":
         print("Test Case Passed")
     else:
         print("Test Case Failed")
+    util.report(analyzer,source,dynamicArray)
+
+    
         

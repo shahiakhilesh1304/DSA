@@ -1,82 +1,109 @@
-import math
-import numpy as np
-from sklearn.metrics import mean_squared_error
-import time
-from functools import wraps
+import ast
 import inspect
+import types
+import sys
+from typing import Dict, Any, Optional
 
-
-
-class BigOCalculator:
+class ComplexityAnalyzer:
     def __init__(self):
-        self.results = {}
-
-    @staticmethod
-    def calculate(input_sizes, times):
-        complexities = {
-            "O(1)": lambda n: [1 for _ in n],
-            "O(log n)": lambda n: [math.log2(i) if i > 0 else 0 for i in n],
-            "O(n)": lambda n: [i for i in n],
-            "O(n log n)": lambda n: [i * math.log2(i) if i > 0 else 0 for i in n],
-            "O(n^2)": lambda n: [i ** 2 for i in n],
-            "O(2^n)": lambda n: [2 ** i for i in n],
+        self.complexity_map = {
+            'constant': 'O(1)',
+            'linear': 'O(n)',
+            'quadratic': 'O(n²)',
+            'cubic': 'O(n³)',
+            'logarithmic': 'O(log n)',
+            'linearithmic': 'O(n log n)',
+            'exponential': 'O(2ⁿ)'
         }
+        
+    def analyze_node(self, node: ast.AST) -> str:
+        if isinstance(node, ast.For):
+            nested_complexity = self.analyze_node_list(node.body)
+            if 'n²' in nested_complexity:
+                return 'O(n³)'
+            elif 'n' in nested_complexity:
+                return 'O(n²)'
+            return 'O(n)'
+            
+        elif isinstance(node, ast.While):
+            nested_complexity = self.analyze_node_list(node.body)
+            if 'n' in nested_complexity:
+                return 'O(n²)'
+            return 'O(n)'
+            
+        elif isinstance(node, (ast.If, ast.IfExp)):
+            return 'O(1)'
+            
+        elif isinstance(node, ast.Call):
+            if isinstance(node.func, ast.Name):
+                if node.func.id in ['sorted', 'sort']:
+                    return 'O(n log n)'
+                elif node.func.id in ['min', 'max', 'sum']:
+                    return 'O(n)'
+            return 'O(1)'
+            
+        return 'O(1)'
 
-        errors = {}
-        for complexity, func in complexities.items():
-            estimated_times = func(input_sizes)
-            scale = np.mean(times) / np.mean(estimated_times)
-            scaled_estimated_times = [t * scale for t in estimated_times]
-            errors[complexity] = mean_squared_error(times, scaled_estimated_times)
+    def analyze_node_list(self, nodes: list) -> str:
+        complexities = []
+        for node in nodes:
+            if isinstance(node, ast.AST):
+                complexities.append(self.analyze_node(node))
+        
+        if 'O(n³)' in complexities:
+            return 'O(n³)'
+        elif 'O(n²)' in complexities:
+            return 'O(n²)'
+        elif 'O(n log n)' in complexities:
+            return 'O(n log n)'
+        elif 'O(n)' in complexities:
+            return 'O(n)'
+        return 'O(1)'
 
-        best_fit = min(errors, key=errors.get)
-        return best_fit
+    def analyze_source(self, source_code: str) -> Dict[str, Any]:
+        """Analyze source code string directly."""
+        try:
+            tree = ast.parse(source_code)
+            if isinstance(tree.body[0], ast.FunctionDef):
+                func_node = tree.body[0]
+                return {
+                    'name': func_node.name,
+                    'complexity': self.analyze_node_list(func_node.body),
+                    'source': source_code
+                }
+            return {
+                'name': 'unknown',
+                'complexity': self.analyze_node_list(tree.body),
+                'source': source_code
+            }
+        except Exception as e:
+            return {
+                'name': 'unknown',
+                'complexity': 'Error analyzing',
+                'error': str(e),
+                'source': source_code
+            }
 
-    def analyze_function(self, func, inputs):
-        times = []
-        input_sizes = []
+class ComplexityImporter:
+    def __init__(self):
+        self.analyzer = ComplexityAnalyzer()
+        
+    def analyze_module(self, module_name: str) -> Dict[str, Any]:
+        try:
+            module = __import__(module_name)
+            results = {}
+            
+            for name, obj in inspect.getmembers(module):
+                if inspect.isfunction(obj):
+                    source = inspect.getsource(obj)
+                    results[name] = self.analyzer.analyze_source(source)
+                        
+            return results
+        
+        except ImportError as e:
+            return {'error': f'Failed to import module: {str(e)}'}
 
-        for input_data in inputs:
-            start_time = time.time()
-            func(*input_data)  # Pass unpacked arguments
-            end_time = time.time()
-
-            times.append(end_time - start_time)
-            input_sizes.append(self._get_input_size(input_data[0]))  # Assuming the first argument determines size
-
-        complexity = self.calculate(input_sizes, times)
-        self.results[func.__name__] = complexity
-        return complexity
-
-    @staticmethod
-    def _get_input_size(input_data):
-        if isinstance(input_data, (list, tuple, str, set)):
-            return len(input_data)
-        elif isinstance(input_data, dict):
-            return len(input_data.keys())
-        else:
-            raise ValueError("Unsupported input type for complexity analysis.")
-
-    def get_results(self):
-        return self.results
-
-
-
-def analyze_complexity(inputs):
-    def decorator(func):
-        @wraps(func)
-        def wrapper(*args, **kwargs):
-            num_params = len(inspect.signature(func).parameters)
-            if num_params > 1:
-                calculator = BigOCalculator()
-                complexity = calculator.analyze_function(func, inputs)
-            else:
-                single_input_data = [(input,) for input in inputs]  
-                calculator = BigOCalculator()
-                complexity = calculator.analyze_function(func, single_input_data)
-
-            print(f"Function {func.__name__} has a time complexity of {complexity}")
-            return func(*args, **kwargs)
-        return wrapper
-    return decorator
-
+def install_analyzer():
+    importer = ComplexityImporter()
+    sys.modules['complexity_analyzer'] = importer
+    return importer

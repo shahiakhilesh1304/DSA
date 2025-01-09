@@ -1,3 +1,6 @@
+from Ruler import util
+
+
 def hourglassSum(arr):
     row_len = len(arr)
     col_len = len(arr[0])
@@ -13,9 +16,11 @@ def hourglassSum(arr):
     return result
 
 if __name__ == '__main__':
+    analyzer,source = util.start(hourglassSum)
     arr = []
     for _ in range(6):
         arr.append(list(map(int, input(f"Enter {_+1}th row data space separated: ").split())))
         print("added ",_+1,"th row")
     result = hourglassSum(arr)
     print(result)
+    util.report(analyzer,source,hourglassSum)
