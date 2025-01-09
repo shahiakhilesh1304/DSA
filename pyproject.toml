@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 #Make changes here according to your repository
 [project]
 name = "DSA"
-version = "1.0.0"
+version = "1.1.0"
 description = "Data Structure Practice"
 authors = [
     { name = "Akhilesh Pratap Shahi", email = "akhileshpra.shahi@gmail.com" }

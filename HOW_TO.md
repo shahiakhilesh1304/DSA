@@ -7,8 +7,9 @@ A comprehensive guide to help you get started with and contribute effectively to
 - [Configure pyproject.toml](#2-configure-pyprojecttoml)
 - [Install the Project](#3-install-the-project)
 - [Organize Your Code](#4-organize-your-code)
-- [Utilize the Analyzer Module](#5-utilize-the-analyzer-module)
-- [Upload to Git](#6-upload-to-git)
+- [Utilize the Analyzer Module](#5-utilize-the-analyzer-module) (Note: Removed for the time being do not use this module)
+- [Utilize the Test Case Module](#6-Utilize-the-Test-Case-Module) 
+- [Upload to Git](#7-upload-to-git)
 
 ## 1. Clone the Repository
 
@@ -132,7 +133,19 @@ if __name__ == "__main__":
 - Avoid print statements within performing functions
 - Focus on input-based operations for accurate analysis
 
-## 6. Upload to Git
+
+## 8. Utilize the Test Case Module
+Use the `testCases` module to use all the test cases placed in questions for the particular question you are solving .
+This will provide all the testcase that are available with the particular question in a dictionary format
+
+### Example Implimentation
+[Code which is using this starting from line number 12](Solution/Question5/leftRotation.py)
+### Important Notes:
+- Must organize the code in the way mentioned [Organize Your Code](#4-organize-your-code)
+- Must have input and outputs input one is named as input00.txt then it's output should be named as output00.txt
+
+
+## 7. Upload to Git
 
 After completing your changes, commit and push to the repository:
 
