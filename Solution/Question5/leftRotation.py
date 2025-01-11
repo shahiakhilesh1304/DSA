@@ -12,7 +12,7 @@ def rotationLeft(d,arr):
 
 if __name__ == "__main__":
     testcases = testCases.get_testcases(__file__)
-    aanalyzer,source = util.start(rotationLeft)
+    analyzer,source = util.start(rotationLeft)
     for input,output in testcases.items():
         file = open(input)
         firstline = file.readline().strip().split()

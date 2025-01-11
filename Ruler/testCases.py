@@ -45,15 +45,6 @@ def get_testcases(script_path: str):
     return testcases
 
 def validator(result,output):
-    """Validate the test case
-
-    Args:
-        result (_type_): _description_
-        output (_type_): _description_
-
-    Returns:
-        _type_: _description_
-    """
     file = open(output)
     expected = list(map(int,file.readline().strip().split()))
     if result == expected:

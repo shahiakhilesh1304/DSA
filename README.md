@@ -16,6 +16,7 @@ This file provides a link to access all the questions available in the repositor
 - Question 3 [Hour glass Problem - 2D Array - Basic / Easy](Questions/Question3/HourGlass2DArray.pdf) < [Source - Hackerrank](https://www.hackerrank.com/challenges/2d-array/problem) >
 - Question 4 [Dynamic Array - Basic / Easy](Questions/Question4/dynamic-array-English.pdf) < [Source - Hackerrank](https://www.hackerrank.com/challenges/dynamic-array/problem) >
 - Question 5 [Left Rotate Array - Basic / Easy](Questions/Question5/array-left-rotation-English.pdf) < [Source - Hackerrank](https://www.hackerrank.com/challenges/array-left-rotation/problem) >
+- Question 6 [Linked List Display Items - Basic / Easy](Question/Question6/print-the-elements-of-a-linked-list-English.pdf) < [Source -Hackerrank](https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem) >
 
 
 
