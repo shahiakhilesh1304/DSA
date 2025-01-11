@@ -13,14 +13,14 @@ def display(head):
     return result    
 
 def appendtotail(data,head):
-        new_node = Node(data)
-        if head is not None:
-            cur = head
-            while cur.next!=None:
-                cur = cur.next
-            cur.next = new_node
-            return head
-        return new_node
+    new_node = Node(data)
+    if head is not None:
+        cur = head
+        while cur.next!=None:
+            cur = cur.next
+        cur.next = new_node
+        return head
+    return new_node
 
 if __name__ == "__main__":
     testcases = testCases.get_testcases(__file__)
@@ -37,9 +37,6 @@ if __name__ == "__main__":
             print(i)
         file.close()
         result = testCases.validator(result,output)
-        print(result)
+        print(result,"\n\n")
         util.report(analyzer,source,display)
-        del llist
-                    
-        
-        
+        del llist 
