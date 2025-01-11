@@ -53,11 +53,13 @@ Choose the appropriate installation method based on your environment:
 ### Production Installation
 ```bash
 pip install .
+python -m venv .venv # To create the environment for this repository (So that you will be able to import the modules you have created in python shell opened in this environment as well) 
 ```
 
 ### Development Installation
 ```bash
 pip install -e .
+python -m venv .venv # To create the environment for this repository (So that you will be able to import the modules you have created in python shell opened in this environment as well) 
 ```
 
 ## 4. Organize Your Code

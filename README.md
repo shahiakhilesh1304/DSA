@@ -10,13 +10,14 @@ This file provides a link to access all the questions available in the repositor
 
  ___
 ### Basic
-- Question 1 [Arrays DS - Basic/Easy](Questions/Question1/arrays-ds.pdf) < [SOURCE - Hackerrank](https://www.hackerrank.com/challenges/arrays-ds/problem?isFullScreen=false) >
+- Question 1 [Arrays DS - Basic / Easy - Category Array](Questions/Question1/arrays-ds.pdf) < [SOURCE - Hackerrank](https://www.hackerrank.com/challenges/arrays-ds/problem?isFullScreen=false) >
     - Note: No use of any inbuilt array functions (can use length function)
-- Question 2 [Sum Pair closest to target - Basic / Easy](Questions/Question2/SumPairclosesttotarget.pdf) < [Source - Geeks For Seeks](https://www.geeksforgeeks.org/)>
-- Question 3 [Hour glass Problem - 2D Array - Basic / Easy](Questions/Question3/HourGlass2DArray.pdf) < [Source - Hackerrank](https://www.hackerrank.com/challenges/2d-array/problem) >
-- Question 4 [Dynamic Array - Basic / Easy](Questions/Question4/dynamic-array-English.pdf) < [Source - Hackerrank](https://www.hackerrank.com/challenges/dynamic-array/problem) >
-- Question 5 [Left Rotate Array - Basic / Easy](Questions/Question5/array-left-rotation-English.pdf) < [Source - Hackerrank](https://www.hackerrank.com/challenges/array-left-rotation/problem) >
-- Question 6 [Linked List Display Items - Basic / Easy](Question/Question6/print-the-elements-of-a-linked-list-English.pdf) < [Source -Hackerrank](https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem) >
+- Question 2 [Sum Pair closest to target - Basic / Easy - Category Array](Questions/Question2/SumPairclosesttotarget.pdf) < [Source - Geeks For Seeks](https://www.geeksforgeeks.org/)>
+- Question 3 [Hour glass Problem - 2D Array - Basic / Easy - Category 2D Array](Questions/Question3/HourGlass2DArray.pdf) < [Source - Hackerrank](https://www.hackerrank.com/challenges/2d-array/problem) >
+- Question 4 [Dynamic Array - Basic / Easy - Category Array](Questions/Question4/dynamic-array-English.pdf) < [Source - Hackerrank](https://www.hackerrank.com/challenges/dynamic-array/problem) >
+- Question 5 [Left Rotate Array - Basic / Easy - Category Array](Questions/Question5/array-left-rotation-English.pdf) < [Source - Hackerrank](https://www.hackerrank.com/challenges/array-left-rotation/problem) >
+- Question 6 [Linked List Display Items - Basic / Easy - Category Linked List](Question/Question6/print-the-elements-of-a-linked-list-English.pdf) < [Source - Hackerrank](https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem) >
+- Question 7 [Linked List Insert To Tail - Basic / Easy - Category Linked List](Question/Question7/print-the-elements-of-a-linked-list-English.pdf) < [Source - Hackerrank](https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem) >
 
 
 
