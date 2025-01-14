@@ -12,14 +12,14 @@ def deleteaNode(head,position):
         return head
     if position == 1:
         head = current.next 
-    for _ in range(0, position):
+    for _ in range(0, position+1):
         prev = current
         current = current.next
         if current is None:
             return head
         
     if current is not None:
-        prev.next = current.next
+        prev.next = current.next 
     return head
     
     
