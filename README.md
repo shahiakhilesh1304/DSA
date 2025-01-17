@@ -23,7 +23,7 @@ This file provides a link to access all the questions available in the repositor
 - Question 10 [Linked List Insertion to the particular position in a linked list - Basic / Easy - Category Linked List](Questions/Question10/insert-a-node-at-a-specific-position-in-a-linked-list-English.pdf) < [Source - Hacker Rank](https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem?isFullScreen=true) >
 - Question 11 [Sparse Array - Basic / Medium - Category Array](Questions/Question11/sparse-arrays-English.pdf) < [Source - Hacker Rank](https://www.hackerrank.com/challenges/sparse-arrays/problem) >
 - Question 12 [Array Manipulation - Basic / Hard - Category 2D Array + 1D Array](Questions/Question12/crush-English.pdf) < [Source - Hacker Rank](https://www.hackerrank.com/challenges/crush/problem) >
-
+- Question 13 [Two Linked List Comparision - Basic / Easy - Category Linked List](Questions/Question13/compare-two-linked-lists-English.pdf) < [Source - Hacker Rank](https://www.hackerrank.com/challenges/compare-two-linked-lists/problem) >
 
 
 
