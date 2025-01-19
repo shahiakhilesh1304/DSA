@@ -24,6 +24,8 @@ This file provides a link to access all the questions available in the repositor
 - Question 11 [Sparse Array - Basic / Medium - Category Array](Questions/Question11/sparse-arrays-English.pdf) < [Source - Hacker Rank](https://www.hackerrank.com/challenges/sparse-arrays/problem) >
 - Question 12 [Array Manipulation - Basic / Hard - Category 2D Array + 1D Array](Questions/Question12/crush-English.pdf) < [Source - Hacker Rank](https://www.hackerrank.com/challenges/crush/problem) >
 - Question 13 [Two Linked List Comparision - Basic / Easy - Category Linked List](Questions/Question13/compare-two-linked-lists-English.pdf) < [Source - Hacker Rank](https://www.hackerrank.com/challenges/compare-two-linked-lists/problem) >
+- Question 14 [Merge Two Sorted Linked List - Basic / Easy - Category Linked List](Questions/Question14/merge-two-sorted-linked-lists-English.pdf) < [Source Hacker Rank](https://www.hackerrank.com/challenges/merge-two-sorted-linked-lists/problem) >
+- Question 15 [Check If the linked list is cyclic or not - Basic / Medium  - Category Linked List](Questions/Question15/detect-whether-a-linked-list-contains-a-cycle-English.pdf) < [Source Hacker Rank](https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle/problem) >
 
 
 

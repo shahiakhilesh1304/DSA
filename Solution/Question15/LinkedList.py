@@ -12,10 +12,10 @@ class LinkedList:
     """This will help you to implement the LinkedList
     """
     
-    def __init__(self):
+    def __init__(self,data=None):
         """Creation of the head node which will never going to contain any actual data
         """
-        self.head=Node()
+        self.head=Node(data)
          
     def append(self,data):
         """Append the new node to the current linked list
@@ -61,4 +61,16 @@ class LinkedList:
         new_node.next = current
         return head  
         
+    def mergeTwoSortedList(self,head1,head2):
+            if head1 is None:
+                return head2
+            elif head2 is None:
+                return head1
+            if head1.data <= head2.data:
+                head1.next = self.mergeTwoSortedList(head1.next,head2)
+                return head1
+            else:
+                head2.next = self.mergeTwoSortedList(head1,head2.next)
+                return head2
+            
     
