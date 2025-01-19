@@ -15,6 +15,7 @@ class LinkedList:
     def __init__(self):
         """Creation of the head node which will never going to contain any actual data
         """
+        
         self.head=Node()
          
     def append(self,data):
