@@ -26,7 +26,11 @@ This file provides a link to access all the questions available in the repositor
 - Question 13 [Two Linked List Comparision - Basic / Easy - Category Linked List](Questions/Question13/compare-two-linked-lists-English.pdf) < [Source - Hacker Rank](https://www.hackerrank.com/challenges/compare-two-linked-lists/problem) >
 - Question 14 [Merge Two Sorted Linked List - Basic / Easy - Category Linked List](Questions/Question14/merge-two-sorted-linked-lists-English.pdf) < [Source Hacker Rank](https://www.hackerrank.com/challenges/merge-two-sorted-linked-lists/problem) >
 - Question 15 [Check If the linked list is cyclic or not - Basic / Medium  - Category Linked List](Questions/Question15/detect-whether-a-linked-list-contains-a-cycle-English.pdf) < [Source Hacker Rank](https://www.hackerrank.com/challenges/detect-whether-a-linked-list-contains-a-cycle/problem) >
-- Question 16 [Get Node Value in Linked LIst - Basic / Easy - Category Linked LIst](Questions/Question16/get-the-value-of-the-node-at-a-specific-position-from-the-tail-English.pdf) < [Source -HackerRank](https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail/problem) >
+- Question 16 [Get Node Value in Linked LIst - Basic / Easy - Category Linked List](Questions/Question16/get-the-value-of-the-node-at-a-specific-position-from-the-tail-English.pdf) < [Source -HackerRank](https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail/problem) >
+- Question 17 [Drop the duplicates in Linked List - Basic / Hard - Category Linked List](Questions/Question17/delete-duplicate-value-nodes-from-a-sorted-linked-list-English.pdf) < [SOURCE -HACKER RANK](https://www.hackerrank.com/challenges/delete-duplicate-value-nodes-from-a-sorted-linked-list/problem?isFullScreen=true) >
+- Question 18 [Find the biggest sum of an array - Basic / Easy - Category Array](Question/Question1/a-very-big-sum-English.pdf) < [SOURCE - HACKER RANK](https://www.hackerrank.com/challenges/a-very-big-sum/problem) >
+- Question 19 [Compare the triplets - Basic / Easy(Warm up) - Category Array](Questions/Question19/compare-the-triplets-English.pdf) < [SOURCE - HACKER RANK](https://www.hackerrank.com/domains/algorithms?filters%5Bsubdomains%5D%5B%5D=warmup) >
+- Question 20 [Tallest Candle Count - Basic / Easy(Warm Up) - Category Array](Questions/Question20/birthday-cake-candles-English.pdf) < [SOURCE - HACKER RANK](https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true) >
 
 
 
