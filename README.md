@@ -31,6 +31,7 @@ This file provides a link to access all the questions available in the repositor
 - Question 18 [Find the biggest sum of an array - Basic / Easy - Category Array](Question/Question1/a-very-big-sum-English.pdf) < [SOURCE - HACKER RANK](https://www.hackerrank.com/challenges/a-very-big-sum/problem) >
 - Question 19 [Compare the triplets - Basic / Easy(Warm up) - Category Array](Questions/Question19/compare-the-triplets-English.pdf) < [SOURCE - HACKER RANK](https://www.hackerrank.com/domains/algorithms?filters%5Bsubdomains%5D%5B%5D=warmup) >
 - Question 20 [Tallest Candle Count - Basic / Easy(Warm Up) - Category Array](Questions/Question20/birthday-cake-candles-English.pdf) < [SOURCE - HACKER RANK](https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true) >
+- Question 21 [Find valid chocolate segments - Basic / Easy - Category Array](Questions/Question21/the-birthday-bar-English.pdf) < [SOURCE - HACKER RANK](https://www.hackerrank.com/challenges/the-birthday-bar/problem) >
 
 
 
