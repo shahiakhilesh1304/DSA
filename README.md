@@ -32,6 +32,8 @@ This file provides a link to access all the questions available in the repositor
 - Question 19 [Compare the triplets - Basic / Easy(Warm up) - Category Array](Questions/Question19/compare-the-triplets-English.pdf) < [SOURCE - HACKER RANK](https://www.hackerrank.com/domains/algorithms?filters%5Bsubdomains%5D%5B%5D=warmup) >
 - Question 20 [Tallest Candle Count - Basic / Easy(Warm Up) - Category Array](Questions/Question20/birthday-cake-candles-English.pdf) < [SOURCE - HACKER RANK](https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true) >
 - Question 21 [Find valid chocolate segments - Basic / Easy - Category Array](Questions/Question21/the-birthday-bar-English.pdf) < [SOURCE - HACKER RANK](https://www.hackerrank.com/challenges/the-birthday-bar/problem) >
+- Question 22 [Sum of Multiples of 3 and 5 - Basic / Easy - Category Eulers Project Question](Questions/Question22/euler001-English.pdf) < [SOURCE - HACKERRANK](https://www.hackerrank.com/contests/projecteuler/challenges/euler001/problem?isFullScreen=true) >
+- Question 23 [Sum of evens in Fibonacci Series - Basic / Easy - Category Euler's Project Question](Questions/Question23/euler002-English.pdf) < [SOURCE - HACKERRANK](https://www.hackerrank.com/contests/projecteuler/challenges/euler002?isFullScreen=true) >
 
 
 
