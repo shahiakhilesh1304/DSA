@@ -34,6 +34,9 @@ This file provides a link to access all the questions available in the repositor
 - Question 21 [Find valid chocolate segments - Basic / Easy - Category Array](Questions/Question21/the-birthday-bar-English.pdf) < [SOURCE - HACKER RANK](https://www.hackerrank.com/challenges/the-birthday-bar/problem) >
 - Question 22 [Sum of Multiples of 3 and 5 - Basic / Easy - Category Eulers Project Question](Questions/Question22/euler001-English.pdf) < [SOURCE - HACKERRANK](https://www.hackerrank.com/contests/projecteuler/challenges/euler001/problem?isFullScreen=true) >
 - Question 23 [Sum of evens in Fibonacci Series - Basic / Easy - Category Euler's Project Question](Questions/Question23/euler002-English.pdf) < [SOURCE - HACKERRANK](https://www.hackerrank.com/contests/projecteuler/challenges/euler002?isFullScreen=true) >
+- Question 24 [Largest Prime Factor - Basic ? Easy - Category Euler's Project Algorithm](Questions\Question24\euler003-English.pdf) < [SOURCE - HACKERRANK](https://www.hackerrank.com/contests/projecteuler/challenges/euler003/problem) >
+- Question 25 [Largest Palindrome Product - Basic / Medium - Category Euleer's Project Question](Questions/Question25/euler004-English.pdf) < [SOURCE-HACKERRANK](https://www.hackerrank.com/contests/projecteuler/challenges/euler004/submissions/code/1387982229) >
+
 
 
 
