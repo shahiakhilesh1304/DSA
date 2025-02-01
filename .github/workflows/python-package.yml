@@ -17,7 +17,7 @@ jobs:
     - name: Count Question Folders
       id: count_folders
       run: |
-        folder_count=$($(find Questions -maxdepth 1 -type d | grep -c 'Question') - 1)
+        folder_count=$(($(find Questions -maxdepth 1 -type d | grep -c 'Question') -1 ))
         echo "Found $folder_count question folders"
         echo "folder_count=$folder_count" >> $GITHUB_ENV
 
