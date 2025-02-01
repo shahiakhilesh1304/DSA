@@ -1,40 +1,38 @@
-# This workflow will install Python dependencies, run tests and lint with a variety of Python versions
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
-
-name: Python package
+name: Validate Questions Count
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
-  build:
-
+  validate_questions:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        python-version: ["3.9", "3.10", "3.11"]
 
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Count Question Folders
+      id: count_folders
       run: |
-        python -m pip install --upgrade pip
-        python -m pip install flake8 pytest
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Lint with flake8
+        folder_count=$(find DSA/Questions -maxdepth 1 -type d | grep -c 'Question')
+        echo "Found $folder_count question folders"
+        echo "folder_count=$folder_count" >> $GITHUB_ENV
+
+    - name: Extract Question Count from README
+      id: count_readme
       run: |
-        # stop the build if there are Python syntax errors or undefined names
-        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-    # - name: Test with pytest
-    #   run: |
-    #     pytest
+        question_count=$(grep -oP 'Question \d+' README.md | wc -l)
+        echo "Found $question_count questions in README"
+        echo "question_count=$question_count" >> $GITHUB_ENV
+
+    - name: Compare Counts
+      run: |
+        if [ "$folder_count" -ne "$question_count" ]; then
+          echo "Mismatch: Found $folder_count folders but $question_count questions in README.md"
+          exit 1
+        else
+          echo "Validation passed: Folder count matches question count in README.md"
+        fi
