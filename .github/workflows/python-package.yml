@@ -2,9 +2,9 @@ name: Validate Questions Count
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main","StreakMaintainer"]
   pull_request:
-    branches: ["main"]
+    branches: ["main","StreakMaintainer"]
 
 jobs:
   validate_questions:
