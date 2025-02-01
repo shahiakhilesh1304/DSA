@@ -1,38 +1,54 @@
-name: Validate Questions Count
+name: Validate Question Count in PRs
 
 on:
-  push:
-    branches: ["main","StreakMaintainer"]
   pull_request:
-    branches: ["main","StreakMaintainer"]
+    branches:
+      - main
+
+permissions:
+  pull-requests: write  # Allow adding failure comments to PRs
 
 jobs:
-  validate_questions:
+  validate-question-count:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-    - name: Count Question Folders
-      id: count_folders
-      run: |
-        folder_count=$(($(find Questions -maxdepth 1 -type d | grep -c 'Question') -1 ))
-        echo "Found $folder_count question folders"
-        echo "folder_count=$folder_count" >> $GITHUB_ENV
+      - name: Count Question Folders
+        id: count_folders
+        run: |
+          folder_count=$( ($(find Questions -mindepth 1 -maxdepth 1 -type d -name 'Question*' | wc -l) -1 ) )
+          echo "FOLDER_COUNT=$folder_count" >> $GITHUB_ENV
+          echo "Found $folder_count Question folders."
 
-    - name: Extract Question Count from README
-      id: count_readme
-      run: |
-        question_count=$(grep -oP 'Question \d+' README.md | wc -l)
-        echo "Found $question_count questions in README"
-        echo "question_count=$question_count" >> $GITHUB_ENV
+      - name: Extract Question Count from README
+        id: count_readme
+        run: |
+          readme_count=$(grep -oP 'Question \d+' README.md | wc -l)
+          echo "README_COUNT=$readme_count" >> $GITHUB_ENV
+          echo "Found $readme_count Questions in README.md."
 
-    - name: Compare Counts
-      run: |
-        if [ "$folder_count" -ne "$question_count" ]; then
-          echo "Mismatch: Found $folder_count folders but $question_count questions in README.md"
-          exit 1
-        else
-          echo "Validation passed: Folder count matches question count in README.md"
-        fi
+      - name: Compare Counts
+        run: |
+          if [ "$FOLDER_COUNT" -ne "$README_COUNT" ]; then
+            echo "❌ ERROR: Mismatch detected!"
+            echo "📂 Found $FOLDER_COUNT folders but 📜 $README_COUNT questions in README.md"
+            exit 1  # Block the PR
+          else
+            echo "✅ Validation passed! Folder count matches README.md"
+          fi
+
+      - name: Comment on PR if Validation Fails
+        if: failure()
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.issues.createComment({
+              issue_number: context.payload.pull_request.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: "❌ PR Blocked: The number of Question folders in `DSA/Questions` does not match the questions in `README.md`. Please fix the inconsistency before merging."
+            })
