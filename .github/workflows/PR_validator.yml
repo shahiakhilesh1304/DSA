@@ -6,7 +6,7 @@ on:
       - main
 
 permissions:
-  pull-requests: write  # Allow adding failure comments to PRs
+  pull-requests: write
 
 jobs:
   validate-question-count:
@@ -19,7 +19,7 @@ jobs:
       - name: Count Question Folders
         id: count_folders
         run: |
-          folder_count=$( ($(find Questions -mindepth 1 -maxdepth 1 -type d -name 'Question*' | wc -l) -1 ) )
+          folder_count=$(($(find Questions -maxdepth 1 -type d | grep -c 'Question') - 1))
           echo "FOLDER_COUNT=$folder_count" >> $GITHUB_ENV
           echo "Found $folder_count Question folders."
 
@@ -46,9 +46,9 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            github.issues.createComment({
+            github.rest.issues.createComment({
               issue_number: context.payload.pull_request.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
+              owner: context.payload.repository.owner.login,
+              repo: context.payload.repository.name,
               body: "❌ PR Blocked: The number of Question folders in `DSA/Questions` does not match the questions in `README.md`. Please fix the inconsistency before merging."
-            })
+            });
