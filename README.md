@@ -37,6 +37,7 @@ This file provides a link to access all the questions available in the repositor
 - Question 24 [Largest Prime Factor - Basic ? Easy - Category Euler's Project Algorithm](Questions\Question24\euler003-English.pdf) < [SOURCE - HACKERRANK](https://www.hackerrank.com/contests/projecteuler/challenges/euler003/problem) >
 - Question 25 [Largest Palindrome Product - Basic / Medium - Category Euler's Project Question](Questions/Question25/euler004-English.pdf) < [SOURCE-HACKERRANK](https://www.hackerrank.com/contests/projecteuler/challenges/euler004/submissions/code/1387982229) >
 - Question 26 [Smallest Multiples - Basic / Medium - Category Euler's Project Question](Questions/Question26/euler005-English.pdf) < [SOURCE - HACKERRANK](https://www.hackerrank.com/contests/projecteuler/challenges/euler005/problem) >
+- Question 27 [Sum Square Difference - Basic / Easy - Category Euler's Project Question](Questions/Question27/euler006-English.pdf) < [SOURCE - HACKERRANK](https://www.hackerrank.com/contests/projecteuler/challenges/euler006/problem?isFullScreen=true) >
 
 
 
