@@ -13,6 +13,8 @@ authors = [
 maintainers = [
     { name = "Akhilesh Pratap Shahi", email = "akhileshpra.shahi@gmail.com" }    
 ]
+
+
 readme = "README.md"
 dependencies = [
     "numpy>=1.21.0",
