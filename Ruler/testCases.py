@@ -46,10 +46,14 @@ def get_testcases(script_path: str):
 
 def validator(result,output):
     file = open(output)
-    expected = list(map(int,file.readline().strip().split()))
+    try:
+        expected = list(map(int,file.readline().strip().split()))
+    except:
+        expected = file.readline().strip()
+    file.close()
     if result == expected:
         return f"Test Case Passed with Result {result} where expected is {expected}"
     else:
         return f"Test Case Failed expected is {expected}"
-    file.close()
+    
 
