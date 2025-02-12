@@ -47,3 +47,4 @@ This file provides a link to access all the questions available in the repositor
 - Question 34 [Reverse the Integer - Basic / Medium - Integer](Questions/Question34/ReverseInteger.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/reverse-integer/description/?source=submission-noac) >
 - Question 35 [Container With Most Water - Basic / Medium - Array](Questions/Question35/Container_With_Most_Water.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/container-with-most-water/description/) >
 - Question 36 [Median of Two Sorted Arrays - Basic / Hard - Array](Questions/Question36/MedianofTwoSortedArrays.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) >
+- Question 37 [Median of Two Sorted Arrays - Basic / Medium - Array](Questions/Question37/3Sum.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/3sum/) >
