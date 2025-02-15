@@ -50,3 +50,4 @@ This file provides a link to access all the questions available in the repositor
 - Question 37 [Median of Two Sorted Arrays - Basic / Medium - Array](Questions/Question37/3Sum.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/3sum/) >
 - Question 38 [Remove Element - Basic / Easy - Category Array](Questions/Question38/removeelement.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/remove-element/) >
     - Do Not Use Any External Function
+- Question 39 [Minimum Initial Energy to Finish Tasks - Basic / Hard - Category Array](Questions\Question39\minimunInitialEnergy.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/description/) >
