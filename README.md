@@ -4,6 +4,10 @@ This repository is dedicated to practicing Data Structures and Algorithms, featu
 
 This file provides a link to access all the questions available in the repository, along with a record of your Git streak. Click the link below to view the questions PDF.
 
+## Slack 
+[![Join My Slack](https://img.shields.io/badge/Join%20My%20Community%20On-Slack-blue?logo=slack)](https://join.slack.com/t/datastructure-6rz3152/shared_invite/zt-2zoz0j9ed-uY_lMtT0x7DdzGrOgXXEBQ)
+
+
 ## Streak
 
 [![GitHub Streak](https://github-readme-streak-stats-mocha-sigma.vercel.app?user=Shahiakhilesh1304&theme=nightfox)](https://git.io/streak-stats)
