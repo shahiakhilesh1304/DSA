@@ -31,9 +31,3 @@ if __name__ == "__main__":
         result = testCases.validator([k],output)
         print(result)
         util.report(analyzer,source,minimumEffort)
-        
-
-
-
-
-
