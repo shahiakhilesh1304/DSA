@@ -27,7 +27,7 @@ cd DSA
 Before making any contributions, **read and follow** the steps in [`HOW_TO.md`](https://github.com/shahiakhilesh1304/DSA/blob/main/HOW_TO.md) to set up your development environment.
 
 ### 3️⃣ Create a New Branch  
-Before proceeding, **follow the steps in `[HOW_TO.md](https://github.com/shahiakhilesh1304/DSA/blob/3d78043799a75d6f77ebb8aa8355261f4427e8e7/HOW_TO.md)`** to ensure your environment is correctly set up.  
+Before proceeding, **follow the steps in [`HOW_TO.md`](https://github.com/shahiakhilesh1304/DSA/blob/3d78043799a75d6f77ebb8aa8355261f4427e8e7/HOW_TO.md)** to ensure your environment is correctly set up.  
 Always work on a separate branch for each feature or issue:  
 
 ```bash
