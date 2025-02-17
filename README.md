@@ -4,6 +4,10 @@ This repository is dedicated to practicing Data Structures and Algorithms, featu
 
 This file provides a link to access all the questions available in the repository, along with a record of your Git streak. Click the link below to view the questions PDF.
 
+## Slack 
+[![Join My Slack](https://img.shields.io/badge/Join%20My%20Community%20On-Slack-blue?logo=slack)](https://join.slack.com/t/datastructure-6rz3152/shared_invite/zt-2zoz0j9ed-uY_lMtT0x7DdzGrOgXXEBQ)
+
+
 ## Streak
 
 [![GitHub Streak](https://github-readme-streak-stats-mocha-sigma.vercel.app?user=Shahiakhilesh1304&theme=nightfox)](https://git.io/streak-stats)
@@ -47,3 +51,7 @@ This file provides a link to access all the questions available in the repositor
 - Question 34 [Reverse the Integer - Basic / Medium - Integer](Questions/Question34/ReverseInteger.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/reverse-integer/description/?source=submission-noac) >
 - Question 35 [Container With Most Water - Basic / Medium - Array](Questions/Question35/Container_With_Most_Water.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/container-with-most-water/description/) >
 - Question 36 [Median of Two Sorted Arrays - Basic / Hard - Array](Questions/Question36/MedianofTwoSortedArrays.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) >
+- Question 37 [Median of Two Sorted Arrays - Basic / Medium - Array](Questions/Question37/3Sum.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/3sum/) >
+- Question 38 [Remove Element - Basic / Easy - Category Array](Questions/Question38/removeelement.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/remove-element/) >
+    - Do Not Use Any External Function like remove,pop etc.
+- Question 39 [Minimum Initial Energy to Finish Tasks - Basic / Hard - Category Array](Questions\Question39\minimunInitialEnergy.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/description/) >
