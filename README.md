@@ -57,3 +57,4 @@ This file provides a link to access all the questions available in the repositor
     - Do Not Use Any External Function like remove,pop etc.
 - Question 39 [Minimum Initial Energy to Finish Tasks - Basic / Hard - Category Array](Questions\Question39\minimunInitialEnergy.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/minimum-initial-energy-to-finish-tasks/description/) >
 - Question 40 [Find Special Substring of Length K - Basic / Easy - Category String](Questions/Question40/substring.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/find-special-substring-of-length-k/description/) >
+- Question 41 [Eat Pizzas! - Basic / Medium - Category Array](Questions/Question41/sharePizza.pdf) < [SOURCE - LEETCODE](https://leetcode.com/problems/eat-pizzas/description/) >
