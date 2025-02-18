@@ -12,6 +12,10 @@ This file provides a link to access all the questions available in the repositor
 
 [![GitHub Streak](https://github-readme-streak-stats-mocha-sigma.vercel.app?user=Shahiakhilesh1304&theme=nightfox)](https://git.io/streak-stats)
 
+## Must Read File Befor Contribution
+- [**CODE OF CONDUCT**](https://github.com/shahiakhilesh1304/DSA/blob/3b876e1b93259a9371ed96f8a3a315eeac42afde/CODE_OF_CONDUCT.md)
+- [**HOW TO CONFIGURE**](https://github.com/shahiakhilesh1304/DSA/blob/3d78043799a75d6f77ebb8aa8355261f4427e8e7/HOW_TO.md)
+- [**CONTRIBUTING**](https://github.com/shahiakhilesh1304/DSA/blob/3b876e1b93259a9371ed96f8a3a315eeac42afde/CONTRIBUTING.md)
  ___
 ### Basic
 - Question 1 [Arrays DS - Basic / Easy - Category Array](Questions/Question1/arrays-ds.pdf) < [SOURCE - Hackerrank](https://www.hackerrank.com/challenges/arrays-ds/problem?isFullScreen=false) >
