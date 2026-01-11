@@ -1,4 +1,4 @@
-from Node import Node
+from DSA import Node
 
 class DoublyLinkedList:
     def __init__(self):

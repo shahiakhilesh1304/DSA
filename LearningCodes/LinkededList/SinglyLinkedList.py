@@ -1,4 +1,4 @@
-from Node import Node
+from DSA import Node
 
 class SinglyLinkedList:
     def __init__(self, mode="LIFO"):

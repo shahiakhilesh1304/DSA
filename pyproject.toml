@@ -1,8 +1,8 @@
 [build-system]
-requires = ["setuptools>=42", "wheel"]
+requires = ["setuptools>=68.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
-#Make changes here according to your repository
+# Make changes here according to your repository
 [project]
 name = "DSA"
 version = "1.2.0"
@@ -17,24 +17,30 @@ maintainers = [
 
 readme = "README.md"
 dependencies = [
-    "numpy>=1.21.0",
-    "scikit-learn>=0.24.0",    
+    "numpy>=2.0.0",
+    "scikit-learn>=1.5.0",
     "pandas>=2.2.1",
-    "networkx>=2.8.0",  
-    "matplotlib>=3.5.0",  
-    "numpy>=1.21.0",
-    "typing>=3.7.4", 
+    "networkx>=3.3",
+    "matplotlib>=3.9.0",
 ]
 keywords = ["DSA", "Data Structure", "Practice", "big-o", "complexity-analysis", "performance"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent"
 ]
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 
 [tool.setuptools]
 packages = [
-    "Ruler"
+    "DSA",
+    "Ruler",
+    "LearningCodes",
+    "LearningCodes.LinkededList",
 ]
+py-modules = ["Node"]
+
 [tool.setuptools.package-dir]
+"DSA" = "."
 "Ruler" = "Ruler"
+"LearningCodes" = "LearningCodes"
+"LearningCodes.LinkededList" = "LearningCodes/LinkededList"
